@@ -8,8 +8,8 @@ export function generateRandomRects(
 
 function* genRandomRects(camvasWidth: number, canvasHeight: number) {
   while (true) {
-    const [x, width] = getRandomOffsetAndWidthWithLimit(camvasWidth, 8, 128)
-    const [y, height] = getRandomOffsetAndWidthWithLimit(canvasHeight, 8, 128)
+    const [x, width] = getRandomOffsetAndWidthWithLimit(camvasWidth, 8, 192)
+    const [y, height] = getRandomOffsetAndWidthWithLimit(canvasHeight, 8, 192)
     yield new DOMRect(x, y, width, height)
   }
 }

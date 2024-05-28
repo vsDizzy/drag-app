@@ -5,7 +5,7 @@ import { generateRandomRects, rnd } from './generateRandomRects'
 function App() {
   const [width, height] = [1000, 800]
 
-  const rects = generateRandomRects(1_000, width, height)
+  const rects = generateRandomRects(100, width, height)
 
   return (
     <Canvas width={width} height={height}>
